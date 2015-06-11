@@ -1,0 +1,119 @@
+body {
+	background-color: #efffff;
+	background-image: url("http://www.texturepalace.com/wp-content/uploads/vintage-paper-texture-for-photoshop-3.jpg");
+	/*background-image: url("https://ateacherwithfire.files.wordpress.com/2012/08/yellow-scratched-vintage-paper-texture.jpg");*/
+	background-size: 100% auto;
+
+/*This two are for crossbrowser compatibility*/
+	margin: 0;
+	padding: 0;
+
+}
+
+/*::selection {
+	color: red;
+}*/
+
+/*::-moz-selection {
+	color: red;
+}*/
+
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+img#headerimg {
+
+}
+
+nav {
+	margin-left: 8px;
+	border: 1px solid black;
+	width: 40%;
+	background-color: rgba(239, 254, 255, 0.5);
+	/*background-color: #effeff;*/
+	opacity: 0.4;
+	/*text-align: center;*/
+}
+
+nav a {
+	display: block;
+	width: 200px;
+}
+
+nav:hover {
+	opacity: 1.0;
+}
+
+section.h3topic {
+	border: 5px;
+	/*border-color: black;*/
+	/* 
+		If border-color is set to black,
+		the inset/outset effect are not obvious
+		in browsers except for firefox.
+	*/
+	border-color: grey;
+	border-style: outset;
+	margin: 5px;
+	opacity: 0.4;
+	background-color: rgba(255,255,255,0.3);
+}
+
+section.h3topic:hover {
+	border-style: inset;
+	opacity: 1.0;
+}
+
+
+ol.navlist {
+	list-style-type: upper-roman;
+}
+
+pre {
+	overflow: auto;
+}
+
+
+table.TablesTable, table.TablesTable th, table.TablesTable td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.TablesTable th, table.TablesTable td {
+  padding: 5px;
+  text-align: center;
+}
+
+table.TablesTable td {
+  width: 20%; /* Always evenly since the row spans 100%??? */
+}
+
+table.TablesTable tr.alt td {
+    color: #000000;
+    background-color: #EAF2D3;
+}
+
+table.TablesTable tr th {
+	background-color: #A7C942;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+footer {
+  background-color:#eeeeee;
+  color:black;
+  clear:both;
+  text-align:center;
+  padding:5px; 
+}
