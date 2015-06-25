@@ -4,7 +4,7 @@
 <head> <!-- head contains metadata, the data not displayed -->
   <title>Learn About HTML</title>
   <meta charset="UTF-8" />
-  <link rel="stylesheet" type="text/css" href="learnCSS.css">
+  <link rel="stylesheet" type="text/css" href="learnCSS.css" />
 
   <style>
 
@@ -28,6 +28,14 @@
       color: red;
     }
 
+    #cssbutton {
+    	width: 80px;
+    	height: 40px;
+    	border: 1px solid #ddd;
+    	margin: 15px;
+    	margin-left: 50%;
+    	background-color: #effeee;
+    }
 
   </style>
 
@@ -41,6 +49,8 @@
 <cite>Author: Ziqiao Ding, Summer 2015</cite>
 </header>
 <br />
+<button id="cssbutton" onclick="nocss()">css?</button>
+
 
 <nav>
 <ol class="navlist">
@@ -473,7 +483,26 @@
 <cite>Many Credits to <a href="http://www.w3schools.com" target="_blank">w3schools</a></cite>
 </footer>
 
+
+
+<script type="text/javascript">
+function nocss() {
+	var csssheet = document.getElementsByTagName("link")[0].getAttribute("href");
+	if (csssheet == "") {
+		document.getElementsByTagName("link")[0].setAttribute("href", "learnCSS.css");
+	}
+	else if (csssheet == "learnCSS.css") {
+		document.getElementsByTagName("link")[0].setAttribute("href", "");
+	}
+	else {
+
+	}
+}
+
+</script>
+
 </body>
+
 
 
 </html>
