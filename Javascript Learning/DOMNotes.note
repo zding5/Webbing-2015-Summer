@@ -1,0 +1,78 @@
+##NOTE
+
+# This is a file taking notes on DOM stuffs, html, css, js basically.
+
+
+-- HTML img Width and Height
+	
+	- When specified in img tag, shoule be without unit.
+
+		* <img width="42" height="42">
+
+	- When specified in CSS, should be with unit. 
+
+		* img {
+			width: 42px;
+			height: 42px;
+		}
+
+
+-- Javascript: for vs for in:
+	
+	- for loop deals with values	
+	
+		* for (var i = 0; i < a.length; i++)
+   			//do stuff with a[i]
+
+   	- for in loop deals with keys
+
+   		* for (var key in o)
+  			//do stuff with o[key]
+
+
+-- Preventing keys' default actions in browser:
+
+	- e.g Tab key by default would switch focus to different portion of the browser (say address bar).
+
+	- To prevent such default actions, you need 
+
+		* 	xxx.addEventListener("keydown", func);
+
+		* The crucial part here is to listen or bind "keydown", instead of "keypress", I have no idea why a lot of people online use "keypress" and make it work...
+
+		* According to my experiment, only "keydown" can effectively prevent default actions, at least for Tab key.
+
+	- You can also use jQuery but you still need "Keydown".
+
+
+-- childNodes index of lists: !!!
+
+	- When you have a list in html <ol>, <ul> and etc., <li></li> are definitely child nodes of lists.
+
+	- BUT pay attention to text nodes !!!:
+
+	- First case: 
+
+		* 	<ul><li>stuff</li><li>stuff</li></ul>:
+
+		* In this case, 1st child is <li></li>, 2nd is the second <li></li>.
+
+	- Second case: 
+
+		* 	<ul>
+				<li>stuff</li>
+				<li>stuff</li>
+			</ul>
+
+		* In this case, 1st is text !!!, because you have space between <li> and <ul>, the space will be recognized as a text node.
+
+		* 2nd child is li.
+
+
+		* By the same logic, 3rd is text again, 4th is li and 5th is text.
+
+
+
+
+
+

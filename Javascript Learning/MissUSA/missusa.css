@@ -1,0 +1,32 @@
+header {
+	text-align: center;
+	font-family: futura;
+}
+
+ul {
+	text-align: center;
+}
+
+li {
+	margin-left: 5%;
+	display: inline;
+}
+
+a {
+	font-family: papyrus;
+}
+
+img {
+	margin: auto;
+}
+
+.photo {
+	display: none;
+	width: 300px;
+	height: 450px;
+}
+
+#hideall {
+	font-family: gill-sans;
+	font-size: 12px;
+}
